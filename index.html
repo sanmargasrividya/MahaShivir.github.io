@@ -39,10 +39,16 @@
     }
   }
   @media (max-width:600px) {
-    .separator {
+    .showinlargescreen {
       display: none; 
     }
   }
+  
+ @media (min-width:500px) {
+    .showinsmallscreen {
+      display: none; 
+    }
+  } 
   </style>
 </head>
 <body>
@@ -78,15 +84,25 @@
         </div>      
       </div>     
 </div>
-    <div class="container-fluid">
+    <div class="container-fluid showinlargescreen">
         <div class="row">
-            <div class="col-md-6 padding-0" style="position: absolute; z-index:-1;">               
+            <div class="col-md-6 padding-0" style="position: absolute; z-index:-1;">             
                 <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
             </div>              
             <div class="col-md-6 col-md-push-6">
-                <img src="images/top-evet-cont-line.png" class="img-responsive separator" style="height: 450px;" alt="Image">
+                <img src="images/top-evet-cont-line.png" class="img-responsive" style="height: 450px;" alt="Image">
             </div> 
             <div class="col-md-6 padding-0" style="z-index:-1;">
+               <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image"> 
+            </div>
+      </div>
+    </div> 
+      <div class="container-fluid showinsmallscreen">
+        <div class="row">
+            <div class="col-md-6 padding-0">             
+                <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
+            </div>   
+            <div class="col-md-6 padding-0">
                <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image"> 
             </div>
       </div>
