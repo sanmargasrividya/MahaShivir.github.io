@@ -84,6 +84,102 @@
       display: none; 
     }
   } 
+.img-wrapper {
+  position: relative;
+}
+
+.img-overlay-SH {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:54%;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay-SH:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 70%;
+}
+
+.img-overlay-VS{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:4%;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay-VS:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 70%;
+}
+.img-overlay-SH-M {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:54%;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay-SH-M:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 70%;
+}
+
+.img-overlay-VS-M {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:4%;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay-VS-M:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 70%;
+}
+.img-overlay-Register{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:22%;
+  right:0;
+  /*text-align: center;*/
+}
+
+.img-overlay-Register:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 72%;
+}
+.img-overlay-Register-M {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:4%;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay-Register-M:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 70%;
+}
   body {
   	font-family: Lato;
   	font-size: 18px;
@@ -117,9 +213,9 @@
 </nav>
 <div id="myCarousel" class="carousel slide showinlargescreen" data-ride="carousel">      
     <div class="carousel-inner" >
-      <div class="item active">
+      <div class="item active img-wrapper">
         <img src="images/top-banner.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
-        <div class="col-md-12" style="position: absolute; top:400px; left: 300px;">                            
+        <div class="col-md-12 img-overlay-Register"><!-- style="position: absolute; top:400px; left: 300px;">-->                            
 		     <a href="#register">
 		          <button type="button" class="register_btn">                        
 		          </button>
@@ -130,9 +226,9 @@
 </div>
 <div id="myCarousel" class="carousel slide showinsmallscreen" data-ride="carousel">      
     <div class="carousel-inner" >
-      <div class="item active">
+      <div class="item active img-wrapper">
         <img src="images/mobile image.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
-        <div class="col-xs-5 col-sm-5 col-lg-5" style="position: absolute; top:200px; left: 300px;">                            
+        <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-Register-M" style="position: absolute; top:200px; left: 300px;">                            
 		     <a href="#register">
 		          <button type="button" class="register_btn">                        
 		          </button>
@@ -143,9 +239,9 @@
 </div>
     <div class="container-fluid showinlargescreen">
         <div class="row">
-            <div class="col-md-6 padding-0" style="position: absolute; z-index:-1;">             
+            <div class="col-md-6 padding-0 img-wrapper" style="position: absolute; z-index:-1;">             
                 <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
-                <div class="col-xs-5 col-sm-5 col-lg-5" style="position: absolute; top:330px; left: 410px;">                            
+                <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-SH"><!--/*style="position: absolute; top:330px; left: 410px;"*/-->                            
 			     <a href="#register">
 			          <button type="button" class="knowmore_btn">                        
 			          </button>
@@ -155,26 +251,38 @@
             <div class="col-md-6 col-md-push-6">
                 <img src="images/top-evet-cont-line.png" class="img-responsive" style="height: 450px;" alt="Image">
             </div> 
-            <div class="col-md-6 padding-0" style="z-index:-1;">
+            <div class="col-md-6 padding-0 img-wrapper" style="z-index:-1;">
                <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
-               <div class="col-xs-5 col-sm-5 col-lg-5" style="position: absolute; top:325px; left: 80px;">                            
-		     <a href="#register">
-		          <button type="button" class="knowmore_btn">                        
-		          </button>
-		     </a>
-		</div> 		
+               <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-VS"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
+			     <a href="#register">
+			          <button type="button" class="knowmore_btn">                        
+			          </button>
+			     </a>
+			  </div> 		
        </div>
       </div>
     </div> 
       <div class="container-fluid showinsmallscreen">
         <div class="row">
-            <div class="col-md-6 padding-0">             
+            <div class="col-md-6 padding-0 img-wrapper">             
                 <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
+                <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-SH-M"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
+				     <a href="#register">
+				          <button type="button" class="knowmore_btn">                        
+				          </button>
+				     </a>
+				</div> 		
             </div>   
-            <div class="col-md-6 padding-0">
-               <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image"> 
-            </div>
-      </div>
+            <div class="col-md-12 padding-0 img-wrapper">
+            	<img src="images/SosPreReq.png" class="img-responsive" style="width:100%;" alt="Image">
+            	 <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-VS-M"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
+				     <a href="#register">
+				          <button type="button" class="knowmore_btn">                        
+				          </button>
+				     </a>
+				</div> 
+        	</div>
+       </div>
     </div> 
     <section class="about-ie">
         <div class="container">
@@ -204,21 +312,11 @@
         <div class="row main">
             <div class="col-md-12 padding-0">
                 <img src="images/secrets-of-supramental-healing-banner.jpg" class="img-responsive" style="width:100%;" alt="Image">
-            </div>              
+            </div> 
+            <div class="col-md-12 padding-0">
+            	<img src="images/SosPreReq.png" class="img-responsive" style="width:100%;" alt="Image">
+			</div>             
         </div>
-	<div class="col-md-12 padding-0">
-            <img src="images/SosPreReq.png" class="img-responsive" style="width:100%;" alt="Image">
-        </div>  
-       <!--  <div class="row" style="background-color: yellow;">
-        	<div class="col-md-6 padding-0">
-        		<h2>Date:</h2>
-        		<h1>25th December</h1>
-        	</div>
-        	<div class="col-md-6 padding-0">
-        		<h2>Prerequisites :</h2>
-        		<h4>Only for sadhaks who are attending Vishnu Sahasra Nama Nigooda Rahasya</h4>
-        	</div>
-        </div>-->
     </div> 
     <section class="about-ie">
         <div class="container">
@@ -338,20 +436,11 @@
             <div class="col-md-12 padding-0">
                 <img src="images/vishnu-sahasranama-banner.jpg" class="img-responsive" style="width:100%;" alt="Image">
             </div>
+            
         </div>
-	<div class="col-md-12 padding-0">
+        <div class="col-md-12 padding-0">
             <img src="images/VishnuPrereq.png" class="img-responsive" style="width:100%;" alt="Image">
         </div>  
-        <!--<div class="row" style="background-color: yellow;">
-        	<div class="col-md-6 padding-0">
-        		<h2>Date:</h2>
-        		<h1> 26th to 29th December</h1>
-        	</div>
-        	<div class="col-md-6 padding-0">
-        		<h2>Prerequisites :</h2>
-        		<h4>No Prerequisites</h4>
-        	</div>
-        </div>-->
     </div>
     <section class="about-ie">
         <div class="container">
