@@ -180,15 +180,30 @@
   /* adjust 'height' to position overlay content vertically */
   height: 40%;
 }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 0px;
+  }
+  
   body {
+  	position: relative; 
   	font-family: Lato;
   	font-size: 18px;
   }
   </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="0">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
