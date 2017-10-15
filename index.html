@@ -8,9 +8,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-	  * {
-    	box-sizing:content-box;
-    }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -41,6 +38,26 @@
 	padding-right:0;
 	padding-left:0;
 	padding-bottom:10;
+}
+.youTubeBut {
+  background: url(images/youtube-logo.png) 0 0 transparent;
+  /*border: medium none !important;*/
+  width: 100px;
+  height: 100px;
+  color: transparent;
+  border: 0;
+  background-size: 100%; /* To fill the dimensions of container (button), or */
+  /*background-size: 40px auto; /* to specify dimensions explicitly */
+}
+.faceBookBut {
+  background: url(images/fb-logo.png) 0 0 transparent;
+  /*border: medium none !important;*/
+  width: 100px;
+  height: 100px;
+  color: transparent;
+  border: 0;
+  background-size: 100%; /* To fill the dimensions of container (button), or */
+  /*background-size: 40px auto; /* to specify dimensions explicitly */
 }
 .image-bg-fluid-height {
     background: url("images/top-banner-bg.jpg") no-repeat top right scroll;
@@ -260,7 +277,7 @@
             <div class="col-md-6 padding-0 img-wrapper" style="position: absolute; z-index:-1;">             
                 <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
                 <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-SH"><!--/*style="position: absolute; top:330px; left: 410px;"*/-->                            
-			     <a href="#register">
+			     <a href="#supramentalHealing">
 			          <button type="button" class="knowmore_btn">                        
 			          </button>
 			     </a>
@@ -272,7 +289,7 @@
             <div class="col-md-6 padding-0 img-wrapper" style="z-index:-1;">
                <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
                <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-VS"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
-			     <a href="#register">
+			     <a href="#vishnuSahasranama">
 			          <button type="button" class="knowmore_btn">                        
 			          </button>
 			     </a>
@@ -285,7 +302,7 @@
             <div class="col-md-12 padding-0 img-wrapper">             
                 <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
                 <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-SH-M"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
-		    <a href="#register">
+		    <a href="#supramentalHealingM">
 		       <button type="button" class="knowmore_btn">                        
 		         </button>
 		     </a>
@@ -294,7 +311,7 @@
 	   <div class="col-md-12 padding-0 img-wrapper">
                <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
                <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-VS-M"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
-		    <a href="#register">
+		    <a href="#vishnuSahasranamaM">
 		        <button type="button" class="knowmore_btn"></button>
 		    </a>
 		</div> 		
@@ -318,14 +335,14 @@
             </div>
         </div>       
     </section>
-     <div class="container-fluid showinlargescreen">
+     <div id="supramentalHealing" class="container-fluid showinlargescreen">
         <div class="row main">
             <div class="col-md-12 padding-0">
                 <img src="images/sosh.png" class="img-responsive" style="width:100%;" alt="Image">
             </div>              
         </div>
     </div> 
-    <div class="container-fluid showinsmallscreen">
+    <div id="supramentalHealingM" class="container-fluid showinsmallscreen">
         <div class="row main">
             <div class="col-md-12 padding-0">
                 <img src="images/secrets-of-supramental-healing-banner.jpg" class="img-responsive" style="width:100%;" alt="Image">
@@ -442,14 +459,14 @@
 	</div>
  </div>
     </section>    
-    <div class="container-fluid showinlargescreen">
+    <div id="vishnuSahasranama" class="container-fluid showinlargescreen">
         <div class="row main">
             <div class="col-md-12">
                 <img src="images/vsnr.png" class="img-responsive" style="width:100%;" alt="Image">
             </div>
         </div>
     </div>
-    <div class="container-fluid showinsmallscreen">
+    <div id="vishnuSahasranamaM" class="container-fluid showinsmallscreen">
         <div class="row main">
             <div class="col-md-12 padding-0">
                 <img src="images/vishnu-sahasranama-banner.jpg" class="img-responsive" style="width:100%;" alt="Image">
@@ -546,7 +563,17 @@
  	<br> 	
  </div>
   </section>  
- 
+ <div id="register" class="container-fluid" style="background-color:#D3D3D3;">
+    <div class="row">
+    	<div class="col-md-1">
+        </div>
+    	<div class="col-md-10">
+         	<h2>Register</h2>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+ </div> 
  <div class="container-fluid" style="background-color:#D3D3D3;">
     <div class="row">
     	<div class="col-md-1">
@@ -644,7 +671,15 @@
 <footer class="container-fluid text-center footerlatest">	
 	<div class="container-fluid" style="background-color:grey;">
     <div class="row">
-    	<div class="col-md-12" style="height:100px;">         	
+    	<div class="col-md-4" style="height:100px;">   
+        </div>
+        <div class="col-md-4" style="height:100px;">    
+    		 <button type="button" class="faceBookBut">                        
+		          </button> 
+		     <button type="button" class="youTubeBut">                        
+		          </button>         	
+        </div>
+        <div class="col-md-4" style="height:100px;">  
         </div>
     </div>
  </div> 
