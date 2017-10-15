@@ -237,7 +237,7 @@
 	var numberOfParticipents;
     $(document).on('change','#noOfParticipents',function(){
          //alert($(this).val());        
-         var personInfo ='<div class="row"><p><input placeholder="Name" type="text" name="name"></p><p><input placeholder="Location" type="text" name="location"></p><p><input placeholder="Email" type="text" name="email"></p><p><input placeholder="Phone Number" type="text" name="phonenumber"></p></div>';
+         var personInfo ='<div class="col-md-10"><p><div class="col-md-10 Name"><input type="text" name="Name" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Name"></div></p><p><div class="col-md-10 location"><input type="text" name="location" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Location"></div></p><p><div class="col-md-10 email"><input type="email" name="email" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p><p><div class="col-md-10 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p></div>';
          var noOfParticipents = parseInt($(this).val());
          var innerHtml = "";
          if( noOfParticipents > 1){
