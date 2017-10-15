@@ -233,7 +233,29 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<script>    
+<script>
+	var numberOfParticipents;
+    $(document).on('change','#noOfParticipents',function(){
+         //alert($(this).val());        
+         var personInfo ='<div class="container"><p><span class="wpcf7-form-control-wrap Name"><input type="text" name="Name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name"></span></p><p><span class="wpcf7-form-control-wrap location"><input type="text" name="location" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Location"></span></p><p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E - mail id"></span></p><p><span class="wpcf7-form-control-wrap PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number"></span></p></div>';
+         var noOfParticipents = parseInt($(this).val());
+         var innerHtml = "";
+         if( noOfParticipents > 1){
+         	for(var index=0; index < noOfParticipents; index++){
+         		//$("#personInfo").html("");
+         		if(innerHtml !== ""){
+         			innerHtml = innerHtml + "<br>";
+         		}
+         		innerHtml = innerHtml + personInfo;
+         	}
+         	$("#personInfo").html( innerHtml );
+         	//if(parseInt($(this).val())
+         	numberOfParticipents = noOfParticipents;
+         }
+         else if (noOfParticipents == 1 && numberOfParticipents > 1){         	
+         	$("#personInfo").html( personInfo );
+         }
+    });
     /*($("li").on("click", function(e) {
     	e.stopPropagation();   
     	var listItems =  $("li");
@@ -595,7 +617,8 @@
  	<br>
  	<br> 	
  </div>
-  </section>  
+</section>  
+  
  <div id="register" class="container-fluid" style="background-color:#D3D3D3;">
     <div class="row">
     	<div class="col-md-1">
@@ -606,7 +629,49 @@
         <div class="col-md-1">
         </div>
     </div>
- </div> 
+ </div>
+ <div class="container">
+ 	<br>
+ 	<br>
+    <div class="row">
+    	<div class="col-md-1">
+        </div>
+    	<div class="col-md-10">         
+         	<div>
+         		<div class="contact">
+					<div class="con-form"><div role="form" class="wpcf7" id="wpcf7-f508-p21-o2" lang="en-US" dir="ltr">
+					<div class="screen-reader-response"></div>
+					<form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+					<div style="display: none;">
+					<input type="hidden" name="_wpcf7" value="508">
+					<input type="hidden" name="_wpcf7_version" value="4.7">
+					<input type="hidden" name="_wpcf7_locale" value="en_US">
+					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f508-p21-o2">
+					<input type="hidden" name="_wpnonce" value="ca1b9c27e6">
+					</div>
+					<p><span class="wpcf7-form-control-wrap menu-896"><select name="menu-896" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false"><option value="">Select Event</option><option value="SSHandVSNR">Secrets of Supramental healing and Vishnu Sahasra Nama Nighooda Rahasya</option><option value="VSNR">Vishnu Sahasra Nama Nighooda Rahasya</option></select></span></p><p></p>
+					<div id="personInfo">
+						<div class="panel">
+							<p><span class="wpcf7-form-control-wrap Name"><input type="text" name="Name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name"></span></p>
+							<p><span class="wpcf7-form-control-wrap location"><input type="text" name="location" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Location"></span></p>
+							<p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E - mail id"></span></p>
+							<p><span class="wpcf7-form-control-wrap PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number"></span></p>
+						</div>
+					</div>
+					<p><span class="wpcf7-form-control-wrap NumberofParticipants"><select id="noOfParticipents" name="NumberofParticipants" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false"><option value="">Select Number of Participants</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></span></p>
+					<p><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+					<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
+					<p></p>
+				</div>
+         	</div>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+    <br>
+    <br>
+ </div>
+  
  <div id="FAQcont" class="container-fluid" style="background-color:#D3D3D3;">
     <div class="row">
     	<div class="col-md-1">
