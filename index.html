@@ -235,10 +235,9 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <script>
 	var numberOfParticipents;
-    $(document).on('change','#noOfParticipents',loadForm);
-    function loadForm(){
+    $(document).on('change','#noOfParticipents',function(){
          //alert($(this).val());        
-         var personInfo ='<div class="col-md-10"><p><div class="col-md-10 Name"><input type="text" name="Name" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Name"></div></p><p><div class="col-md-10 location"><input type="text" name="location" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Location"></div></p><p><div class="col-md-10 email"><input type="email" name="email" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p><p><div class="col-md-10 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p></div>';
+         var personInfo ='<div class="row"><p><input placeholder="Name" type="text" name="name"></p><p><input placeholder="Location" type="text" name="location"></p><p><input placeholder="Email" type="text" name="email"></p><p><input placeholder="Phone Number" type="text" name="phonenumber"></p></div>';
          var noOfParticipents = parseInt($(this).val());
          var innerHtml = "";
          if( noOfParticipents > 1){
@@ -256,7 +255,7 @@
          else if (noOfParticipents == 1 && numberOfParticipents > 1){         	
          	$("#personInfo").html( personInfo );
          }
-    }
+    });
     /*($("li").on("click", function(e) {
     	e.stopPropagation();   
     	var listItems =  $("li");
@@ -637,20 +636,24 @@
     	<div class="col-md-12">
 	 	<form method="post" name="myemailform" action="form-to-email.php">
 	 		<p>
-	 			<select aria-required="true" aria-invalid="false"><option value="">Select Event</option><option value="SSHandVSNR">Secrets of Supramental healing and Vishnu Sahasra Nama Nighooda Rahasya</option><option value="VSNR">Vishnu Sahasra Nama Nighooda Rahasya</option></select>
+	 			<select aria-required="true" aria-invalid="false"><option value="">Select Event</option><option value="SSHandVSNR">Secrets Of Supramental Healing </option><option value="VSNR">Vishnu Sahasra Nama Nighooda Rahasya</option></select>
 	 		</p>
-			<p>
-				<input placeholder="Name" type="text" name="name">
-			</p>
-			<p>
-				<input placeholder="Location" type="text" name="location">
-			</p>
-			<p>
-				<input placeholder="Email" type="text" name="email">
-			</p>
-			<p>
-				<input placeholder="Phone Number" type="text" name="phonenumber">
-			</p>
+	 		<div id="personalInfo" class="container">
+	 			<div class="row">
+	 				<p>
+						<input placeholder="Name" type="text" name="name">
+					</p>
+					<p>
+						<input placeholder="Location" type="text" name="location">
+					</p>
+					<p>
+						<input placeholder="Email" type="text" name="email">
+					</p>
+					<p>
+						<input placeholder="Phone Number" type="text" name="phonenumber">
+					</p>					
+	 			</div>
+	 		</div>
 			<p>
 				<select id="noOfParticipents" name="NumberofParticipants" aria-required="true" aria-invalid="false"><option value="">Select Number of Participants</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
 			</p>
