@@ -77,6 +77,16 @@
   background-size: 100%; /* To fill the dimensions of container (button), or */
   /*background-size: 40px auto; /* to specify dimensions explicitly */
 }
+.register_nav_btn {
+  background: url(images/reg-button-top-banner.png) 0 0 transparent;
+  /*border: medium none !important;*/
+  width: 150px;
+  height: 40px;
+  color: transparent;
+  border: 0;
+  background-size: 100%; /* To fill the dimensions of container (button), or */
+  /*background-size: 40px auto; /* to specify dimensions explicitly */
+}
 .register_btn {
   background: url(images/reg-button-top-banner.png) 0 0 transparent;
   /*border: medium none !important;*/
@@ -223,6 +233,20 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script>    
+    /*($("li").on("click", function(e) {
+    	e.stopPropagation();   
+    	var listItems =  $("li");
+    	for(var index=0; index < listItems.length; i++){
+    		if(listItems[i] === e.target){
+    			listItems[i].addClass('active');
+    		}
+    		else{
+    			listItems[i].removeClass('active'); 
+    		}
+    	}
+	});*/
+</script>
 <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -239,15 +263,16 @@
         <li><a href="#supramentalHealing">Secrets Of Supramental Healing</a></li>
         <li><a href="#vishnuSahasranama">Vishnu Sahasranama</a></li>
         <li><a href="#FAQcont">FAQ</a></li>
-        <li><a href="#register">Register</a></li>
+        <!--<li><a href="#register">Register</a></li>-->
       </ul>
       <ul class="nav navbar-nav showinsmallscreen">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#supramentalHealingM">Secrets Of Supramental Healing</a></li>
         <li><a href="#vishnuSahasranamaM">Vishnu Sahasranama</a></li>
         <li><a href="#FAQcont">FAQ</a></li>
-        <li><a href="#register">Register</a></li>
+        <!--<li><a href="#register">Register</a></li>-->
       </ul>
+      <a href="#register"><button class="navbar-btn register_nav_btn"></button></a>
       <!---<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>--->
