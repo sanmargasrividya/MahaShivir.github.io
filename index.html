@@ -239,40 +239,42 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <script>
 	var numberOfParticipents;
-    $(document).on('change','#noOfParticipents',function(){
-         //alert($(this).val());        
-         //var personInfo ='<div class="col-md-10"><p><div class="col-md-10 Name"><input type="text" name="Name" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Name"></div></p><p><div class="col-md-10 location"><input type="text" name="location" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Location"></div></p><p><div class="col-md-10 email"><input type="email" name="email" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p><p><div class="col-md-10 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p></div>';
-         var personInfo ='<div id="personalInfo" class="container"><div class="row"><p><input placeholder="Name" type="text" name="name"></p><p><input placeholder="Location" type="text" name="location"></p><p><input placeholder="Email" type="text" name="email"></p><p><input placeholder="Phone Number" type="text" name="phonenumber"></p></div></div>';
-         var noOfParticipents = parseInt($(this).val());
-         var innerHtml = "";
-         if( noOfParticipents > 1){
-         	for(var index=0; index < noOfParticipents; index++){
-         		//$("#personInfo").html("");
-         		if(innerHtml !== ""){
-         			innerHtml = innerHtml + "<br>";
-         		}
-         		innerHtml = innerHtml + personInfo;
-         	}
-         	$("#personInfo").html( innerHtml );
-         	//if(parseInt($(this).val())
-         	numberOfParticipents = noOfParticipents;
-         }
-         else if (noOfParticipents == 1 && numberOfParticipents > 1){         	
-         	$("#personInfo").html( personInfo );
-         }
-    });
-    /*($("li").on("click", function(e) {
-    	e.stopPropagation();   
-    	var listItems =  $("li");
-    	for(var index=0; index < listItems.length; i++){
-    		if(listItems[i] === e.target){
-    			listItems[i].addClass('active');
-    		}
-    		else{
-    			listItems[i].removeClass('active'); 
-    		}
-    	}
-	});*/
+	$( document ).ready(function() {
+	    console.log( "ready!" );
+	    $(document).on('change','#paymentMode',function(){	 
+	    	 var personInfo ='<div id="personalInfo" class="container"><div class="row"><p><input placeholder="Name" type="text" name="name"></p><p><input placeholder="Location" type="text" name="location"></p><p><input placeholder="Email" type="text" name="email"></p><p><input placeholder="Phone Number" type="text" name="phonenumber"></p></div></div>';
+	         
+	         if($(this).val() === "online payment" ){
+	         	$("#onlinepayment").show();         	
+	         }      
+	         else{
+	         	$("#onlinepayment").hide();
+	         }
+	    });
+	    	
+	    $(document).on('change','#noOfParticipents',function(){
+	         //alert($(this).val());        
+	         //var personInfo ='<div class="col-md-10"><p><div class="col-md-10 Name"><input type="text" name="Name" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Name"></div></p><p><div class="col-md-10 location"><input type="text" name="location" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Location"></div></p><p><div class="col-md-10 email"><input type="email" name="email" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p><p><div class="col-md-10 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p></div>';
+	         var personInfo ='<div id="personalInfo" class="container"><div class="row"><p><input placeholder="Name" type="text" name="name"></p><p><input placeholder="Location" type="text" name="location"></p><p><input placeholder="Email" type="text" name="email"></p><p><input placeholder="Phone Number" type="text" name="phonenumber"></p></div></div>';
+	         var noOfParticipents = parseInt($(this).val());
+	         var innerHtml = "";
+	         if( noOfParticipents > 1){
+	         	for(var index=0; index < noOfParticipents; index++){
+	         		//$("#personInfo").html("");
+	         		if(innerHtml !== ""){
+	         			innerHtml = innerHtml + "<br>";
+	         		}
+	         		innerHtml = innerHtml + personInfo;
+	         	}
+	         	$("#personInfo").html( innerHtml );
+	         	//if(parseInt($(this).val())
+	         	numberOfParticipents = noOfParticipents;
+	         }
+	         else if (noOfParticipents == 1 && numberOfParticipents > 1){         	
+	         	$("#personInfo").html( personInfo );
+	         }
+	    });	
+    });  
 </script>
 <nav class="navbar navbar-inverse navbar-fixed-top"><!-- data-spy="affix" data-offset-top="197">-->
   <div class="container-fluid">
@@ -300,6 +302,7 @@
         <!--<li><a href="#register">Register</a></li>-->
       </ul>
       <a href="#register"><button class="navbar-btn register_nav_btn"></button></a>
+      
       <!---<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>--->
@@ -512,7 +515,7 @@
  	<div class="container">
  		<div class="row">
 			<div class="col-md-3 padding-0"> <h1>Click here for FAQ</h1></div>
-			<div class="col-md-9 padding-0"><h3>(Link to faq in the bottom of the page)</h3></div>
+			<div class="col-md-9 padding-0"><h3><a href="FAQcont">(Link to faq in the bottom of the page)</a></h3></div>
 		</div>
 		<br>
 		<br>
@@ -639,7 +642,7 @@
  	<br>
  	<div class="row">
     	<div class="col-md-12">
-	 	<form method="post" name="myemailform" action="form-to-email.php">
+	 	<form method="post" name="myemailform" action="RegistrationForm.php">
 	 		<p>
 	 			<select aria-required="true" aria-invalid="false"><option value="">Select Event</option><option value="SSHandVSNR">Secrets Of Supramental Healing </option><option value="VSNR">Vishnu Sahasra Nama Nighooda Rahasya</option></select>
 	 		</p>
@@ -662,64 +665,38 @@
 			<p>
 				<select id="noOfParticipents" name="NumberofParticipants" aria-required="true" aria-invalid="false"><option value="">Select Number of Participants</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
 			</p>
+			<p>
+				<select id="paymentMode" name="PaymentMode" aria-required="true" aria-invalid="false"><option value="">Select Mode of Payment</option><option value="Cash/Card">Cash/Card</option><option value="Account Transfer">Account Transfer</option><option value="online payment">online payment</option></select>
+			</p>		
 			<!--<p>
 				<label for='message'>Enter Message:</label> <br>
 				<textarea name="message"></textarea>
 			</p>-->
 			<input type="submit" name='submit' value="submit">
 		</form>
-	</div>
-	</div>
-    <!--<div class="row">
-    	<div class="col-md-12">
-         		<div class="container showinlargescreen">					
-					<form method="post" name="myemailform" action="form-to-email.php"><!--action="" method="post" class="wpcf7-form" novalidate="novalidate">-->					
-						<!--<p><div class="col-md-10"><select  class="col-md-10" aria-required="true" aria-invalid="false"><option value="">Select Event</option><option value="SSHandVSNR">Secrets of Supramental healing</option><option value="VSNR">Vishnu Sahasra Nama Nighooda Rahasya</option></select></div></p><p></p>
-						<div id="personInfo" class="container">
-							<div class="col-md-10">
-								<p><div class="col-md-10 Name"><input type="text" name="Name" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Name"></div></p>
-								<p><div class="col-md-10 location"><input type="text" name="location" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Location"></div></p>
-								<p><div class="col-md-10 email"><input type="email" name="email" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p>
-								<p><div class="col-md-10 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p>
-							</div>
-						</div>
-						<br>
-						<div class="container">
-							<p><div class="col-md-10 NumberofParticipants"><select id="noOfParticipents" name="NumberofParticipants" class="col-md-10" aria-required="true" aria-invalid="false"><option value="">Select Number of Participants</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></div></p>
-						</div>
-						<div class="container">	
-							<p><div class="col-md-10 "><input type="submit" value="Submit"></div></p>	
-						</div>							
-					</form>
-			   </div>
-			   <div class="container showinsmallscreen">					
-					<form method="post" name="myemailform" action="form-to-email.php"><!--action="" method="post" class="wpcf7-form" novalidate="novalidate">-->					
-						<!--<p><div class="col-md-4"><select  class="col-md-4" aria-required="true" aria-invalid="false"><option value="">Select Event</option><option value="SSHandVSNR">Secrets of Supramental healing</option><option value="VSNR">Vishnu Sahasra Nama Nighooda Rahasya</option></select></div></p><p></p>
-						<div id="personInfo" class="container">
-							<div class="col-md-4">
-								<p><div class="col-md-4 Name"><input type="text" name="Name" value="" size="40" class="col-md-4" aria-required="true" aria-invalid="false" placeholder="Name"></div></p>
-								<p><div class="col-md-4 location"><input type="text" name="location" value="" size="40" class="col-md-4" aria-required="true" aria-invalid="false" placeholder="Location"></div></p>
-								<p><div class="col-md-4 email"><input type="email" name="email" value="" size="40" class="col-md-4" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p>
-								<p><div class="col-md-4 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-4" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p>
-							</div>
-						</div>
-						<br>
-						<div class="container">
-							<p><div class="col-md-4 NumberofParticipants"><select id="noOfParticipents" name="NumberofParticipants" class="col-md-4" aria-required="true" aria-invalid="false"><option value="">Select Number of Participants</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></div></p>
-						</div>
-						<div class="container">	
-							<p><div class="col-md-4"><input type="submit" value="Submit"></div></p>	
-						</div>							
-					</form>
-			   </div>
-			</div>					
-		</div>-->
+		<p>
+			<br>
+		 		<a href="http://Payment.masteratmananda.com"><Button id="onlinepayment" style="width:150; height:50;">Online Payment</Button></a>
+			<br>
+			<script type="text/javascript"> $("#onlinepayment").hide();</script>
+		</p>
+	  </div>  
     </div>
     <br>
     <br>
+    
  </div>
   <script>
-  	loadForm();
+	/*
+	 * <script language="JavaScript">
+	// Code for validating the form
+	// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+	// for details
+	var frmvalidator  = new Validator("myemailform");
+	frmvalidator.addValidation("name","req","Please provide your name"); 
+	frmvalidator.addValidation("email","req","Please provide your email"); 
+	frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+	 */
   </script>
  <div id="FAQcont" class="container-fluid" style="background-color:#D3D3D3;">
     <div class="row">
