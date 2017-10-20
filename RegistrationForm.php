@@ -30,7 +30,7 @@ $to = 'sindhura@hawkeslearning.com';//<== update the email address
 $headers = "From: $sindhura@hawkeslearning.com \r\n";
 $headers .= "Reply-To: $sindhura@hawkeslearning.com \r\n";
 //Send the email!
-mail($to,$email_subject,$email_body,$headers);
+mail($to,$email_subject,$email_body,$headers, "-f your@email.here");
 //done. redirect to thank-you page.
 header('Location: thank-you.html');
 
