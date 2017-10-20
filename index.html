@@ -255,7 +255,7 @@
 	    $(document).on('change','#noOfParticipents',function(){
 	         //alert($(this).val());        
 	         //var personInfo ='<div class="col-md-10"><p><div class="col-md-10 Name"><input type="text" name="Name" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Name"></div></p><p><div class="col-md-10 location"><input type="text" name="location" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Location"></div></p><p><div class="col-md-10 email"><input type="email" name="email" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p><p><div class="col-md-10 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p></div>';
-	         var personInfo ='<div id="personalInfo" class="container"><div class="row"><p><input placeholder="Name" type="text" name="name"></p><p><input placeholder="Location" type="text" name="location"></p><p><input placeholder="Email" type="text" name="email"></p><p><input placeholder="Phone Number" type="text" name="phonenumber"></p></div></div>';
+	         var personInfo ='<div id="personalInfo" class="container"><div class="row"><p><input placeholder="Name" type="text" name="name[]" required></p><p><input placeholder="Location" type="text" name="location[]" required></p><p><input placeholder="Email" type="text" name="email[]" required></p><p><input placeholder="Phone Number" type="text" name="phonenumber[]" required></p></div></div>';
 	         var noOfParticipents = parseInt($(this).val());
 	         var innerHtml = "";
 	         if( noOfParticipents > 1){
@@ -274,7 +274,8 @@
 	         	$("#personInfo").html( personInfo );
 	         }
 	    });	
-    });  
+    });
+  
 </script>
 <nav class="navbar navbar-inverse navbar-fixed-top"><!-- data-spy="affix" data-offset-top="197">-->
   <div class="container-fluid">
@@ -649,24 +650,25 @@
 	 		<div id="personInfo" class="container">
 	 			<div class="row">
 	 				<p>
-						<input placeholder="Name" type="text" name="name">
+						<input placeholder="Name" type="text" name="name[]" required>
 					</p>
 					<p>
-						<input placeholder="Location" type="text" name="location">
+						<input placeholder="Location" type="text" name="location[]" required>
 					</p>
 					<p>
-						<input placeholder="Email" type="text" name="email">
+						<input placeholder="Email" type="text" name="email[]" required>
 					</p>
 					<p>
-						<input placeholder="Phone Number" type="text" name="phonenumber">
-					</p>					
+						<input placeholder="Phone Number" type="text" name="phonenumber[]" required>
+					</p>
+					</div>					
 	 			</div>
 	 		</div>
 			<p>
 				<select id="noOfParticipents" name="NumberofParticipants" aria-required="true" aria-invalid="false"><option value="">Select Number of Participants</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
 			</p>
 			<p>
-				<select id="paymentMode" name="PaymentMode" aria-required="true" aria-invalid="false"><option value="">Select Mode of Payment</option><option value="Cash/Card">Cash/Card</option><option value="Account Transfer">Account Transfer</option><option value="online payment">online payment</option></select>
+				<select id="paymentMode" name="PaymentMode" aria-required="true" aria-invalid="false"><option value="">Select Mode of Payment</option><option value="Cash/Card">Cash/Card</option><option value="Account Transfer">Account Transfer <span style="color:red;">(Preferbale mode)</span></option><option value="online payment">online payment</option></select>
 			</p>		
 			<!--<p>
 				<label for='message'>Enter Message:</label> <br>
@@ -676,7 +678,7 @@
 		</form>
 		<p>
 			<br>
-		 	    <a href="http://Payment.masteratmananda.com"><Button id="onlinepayment" style="width:150; height:50;">Online Payment</Button></a>
+		 		<a href="http://Payment.masteratmananda.com"><Button id="onlinepayment" style="width:150; height:50;">Online Payment</Button></a>
 			<br>
 			<script type="text/javascript"> $("#onlinepayment").hide();</script>
 		</p>
@@ -684,7 +686,6 @@
     </div>
     <br>
     <br>
-    
  </div>
   <script>
 	/*
