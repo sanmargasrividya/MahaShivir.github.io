@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>MahaShivir</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="/MahaShivir.github.io/js/bootstrap-3.3.7/dist/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
   <!--<link rel="stylesheet" href="/js/bootstrap.min.css">-->
   <script src="/MahaShivir.github.io/js/jquery.min.js"></script>
   <script src="/MahaShivir.github.io/js/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-   <style>
+  <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -32,252 +32,17 @@
     padding-right:0;
     padding-left:0;
 }
-.main{
-  display:flex;
-}
-.footerlatest{
-	background-color: none;
-	padding-top:0;
-	padding-right:0;
-	padding-left:0;
-	padding-bottom:10;
-}
-.youTubeBut {
-  background: url(images/youtube-logo.png) 0 0 transparent;
-  /*border: medium none !important;*/
-  width: 100px;
-  height: 100px;
-  color: transparent;
-  border: 0;
-  background-size: 100%; /* To fill the dimensions of container (button), or */
-  /*background-size: 40px auto; /* to specify dimensions explicitly */
-}
-.faceBookBut {
-  background: url(images/fb-logo.png) 0 0 transparent;
-  /*border: medium none !important;*/
-  width: 100px;
-  height: 100px;
-  color: transparent;
-  border: 0;
-  background-size: 100%; /* To fill the dimensions of container (button), or */
-  /*background-size: 40px auto; /* to specify dimensions explicitly */
-}
-.image-bg-fluid-height {
-    background: url("images/top-banner-bg.jpg") no-repeat top right scroll;
-    background-size: cover;
-    height:calc(100vw * 670 / 1360);
-    max-height: 1340px;
-    padding: 0px;
-    margin: 50px 0px 0px;
-}
-.knowmore_btn {
-  background: url(images/know-more-button.png) 0 0 transparent;
-  /*border: medium none !important;*/
-  width: 150px;
-  height: 40px;
-  color: transparent;
-  border: 0;
-  background-size: 100%; /* To fill the dimensions of container (button), or */
-  /*background-size: 40px auto; /* to specify dimensions explicitly */
-}
-.register_nav_btn {
-  background: url(images/reg-button-top-banner.png) 0 0 transparent;
-  /*border: medium none !important;*/
-  width: 150px;
-  height: 40px;
-  color: transparent;
-  border: 0;
-  background-size: 100%; /* To fill the dimensions of container (button), or */
-  /*background-size: 40px auto; /* to specify dimensions explicitly */
-}
-.register_btn {
-  background: url(images/reg-button-top-banner.png) 0 0 transparent;
-  /*border: medium none !important;*/
-  width: 150px;
-  height: 40px;
-  color: transparent;
-  border: 0;
-  background-size: 100%; /* To fill the dimensions of container (button), or */
-  /*background-size: 40px auto; /* to specify dimensions explicitly */
-}
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; 
     }
   }
-  @media (max-width:600px) {
-    .showinlargescreen {
-      display: none; 
-    }
-  }
-  
- @media (min-width:500px) {
-    .showinsmallscreen {
-      display: none; 
-    }
-  } 
-.img-wrapper {
-  position: relative;
-}
-
-.img-overlay-SH {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:16%;
-  right: 0;
-  text-align: center;
-}
-
-.img-overlay-SH:before {
-  content: ' ';
-  display: block;
-  /* adjust 'height' to position overlay content vertically */
-  height: 70%;
-}
-
-.img-overlay-VS{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:42%;
-  right: 0;
-  text-align: center;
-}
-
-.img-overlay-VS:before {
-  content: ' ';
-  display: block;
-  /* adjust 'height' to position overlay content vertically */
-  height: 70%;
-}
-.img-overlay-SH-M {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:54%;
-  right: 0;
-  text-align: center;
-}
-
-.img-overlay-SH-M:before {
-  content: ' ';
-  display: block;
-  /* adjust 'height' to position overlay content vertically */
-  height: 70%;
-}
-
-.img-overlay-VS-M {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right: 0;
-  text-align: center;
-}
-
-.img-overlay-VS-M:before {
-  content: ' ';
-  display: block;
-  /* adjust 'height' to position overlay content vertically */
-  height: 70%;
-}
-.img-overlay-Register{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:22%;
-  right:0;
-  /*text-align: center;*/
-}
-
-.img-overlay-Register:before {
-  content: ' ';
-  display: block;
-  /* adjust 'height' to position overlay content vertically */
-  height: 72%;
-}
-.img-overlay-Register-M {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:20%;
-  right: 0;
-  /*text-align: center;*/
-}
-
-.img-overlay-Register-M:before {
-  content: ' ';
-  display: block;
-  /* adjust 'height' to position overlay content vertically */
-  height: 40%;
-}
-  .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
-  .navbar {
-      margin-bottom: 0px;
-  }
-
-  /*.affix ~ .container-fluid {
-     position: relative;
-     top: 0px;
-  }
-  */
-   body {
-  	position: relative; 
-  	font-family: Lato;
-  	font-size: 18px;
-  	padding-top: 50px;
-  }
   </style>
 </head>
-<body><!-- data-spy="scroll" data-target=".navbar" data-offset="50">-->
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
-<script>
-	var numberOfParticipents;
-	$( document ).ready(function() {
-	    console.log( "ready!" );
-	    $(document).on('change','#paymentMode',function(){	 
-	    	 var personInfo ='<div id="personalInfo" class="container"><div class="row"><p><input placeholder="Name" type="text" name="name"></p><p><input placeholder="Location" type="text" name="location"></p><p><input placeholder="Email" type="text" name="email"></p><p><input placeholder="Phone Number" type="text" name="phonenumber"></p></div></div>';
-	         
-	         if($(this).val() === "online payment" ){
-	         	$("#onlinepayment").show();         	
-	         }      
-	         else{
-	         	$("#onlinepayment").hide();
-	         }
-	    });
-	    	
-	    $(document).on('change','#noOfParticipents',function(){
-	         //alert($(this).val());        
-	         //var personInfo ='<div class="col-md-10"><p><div class="col-md-10 Name"><input type="text" name="Name" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Name"></div></p><p><div class="col-md-10 location"><input type="text" name="location" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Location"></div></p><p><div class="col-md-10 email"><input type="email" name="email" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="E - mail id"></div></p><p><div class="col-md-10 PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="col-md-10" aria-required="true" aria-invalid="false" placeholder="Phone Number"></div></p></div>';
-	         var personInfo ='<div id="personalInfo" class="container"><div class="row"><p><input placeholder="Name" type="text" name="name[]" required></p><p><input placeholder="Location" type="text" name="location[]" required></p><p><input placeholder="Email" type="text" name="email[]" required></p><p><input placeholder="Phone Number" type="text" name="phonenumber[]" required></p></div></div>';
-	         var noOfParticipents = parseInt($(this).val());
-	         var innerHtml = "";
-	         if( noOfParticipents > 1){
-	         	for(var index=0; index < noOfParticipents; index++){
-	         		//$("#personInfo").html("");
-	         		if(innerHtml !== ""){
-	         			innerHtml = innerHtml + "<br>";
-	         		}
-	         		innerHtml = innerHtml + personInfo;
-	         	}
-	         	$("#personInfo").html( innerHtml );
-	         	//if(parseInt($(this).val())
-	         	numberOfParticipents = noOfParticipents;
-	         }
-	         else if (noOfParticipents == 1 && numberOfParticipents > 1){         	
-	         	$("#personInfo").html( personInfo );
-	         }
-	    });	
-    });
-  
-</script>
-<nav class="navbar navbar-inverse navbar-fixed-top"><!-- data-spy="affix" data-offset-top="197">-->
+<body>
+
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -285,559 +50,95 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><span><img src="images/Siddha-Sanmarga-Logopng .png" width="30px;" height="30px;"></img></span><span>Sri Siddha Sanmarga</span></a>
+      <a class="navbar-brand" href="#">Sri Siddha Snamrga</a>
     </div>
     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-      <ul class="nav navbar-nav showinlargescreen">
+      <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#supramentalHealing">Secrets Of Supramental Healing</a></li>
-        <li><a href="#vishnuSahasranama">Vishnu Sahasranama</a></li>
-        <li><a href="#FAQcont">FAQ</a></li>
-        <li><a href="#register">Register</li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">ContactUS</a></li>
       </ul>
-      <ul class="nav navbar-nav showinsmallscreen">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#supramentalHealingM">Secrets Of Supramental Healing</a></li>
-        <li><a href="#vishnuSahasranamaM">Vishnu Sahasranama</a></li>
-        <li><a href="#FAQcont">FAQ</a></li>
-        <li><a href="#register">Register</a></li>
-      </ul>
-	    <!--<a href="http://siddhasanmarga.org/events/">Register</a><!--<button class="navbar-btn register_nav_btn"></button></a>-->
       <!---<ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>--->
     </div>
   </div>
 </nav>
-<div id="myCarousel" class="carousel slide showinlargescreen" data-ride="carousel">      
-    <div class="carousel-inner" >
-      <div class="item active img-wrapper">
-        <img src="images/top-banner.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
-        <div class="col-md-12 img-overlay-Register"><!-- style="position: absolute; top:400px; left: 300px;">-->                            
-		     <a href="#register"><!--http://siddhasanmarga.org/events/"><!---->
-		          <button type="button" class="register_btn">                        
-		          </button>
-		     </a>
-		</div>      
-     </div>  
-   </div>  
-</div>
-<div id="myCarousel" class="carousel slide showinsmallscreen" data-ride="carousel">      
-    <div class="carousel-inner" >
-      <div class="item active img-wrapper">
-        <img src="images/mobile image.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
-        <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-Register-M"><!--style="position: absolute; top:200px; left: 300px;">-->                            
-		     <a href="#register"><!--http://siddhasanmarga.org/events/"><!--#register">-->
-		          <button type="button" class="register_btn">                        
-		          </button>
-		     </a>
-		</div>      
-     </div>  
-   </div>  
-</div>
-   <div class="container-fluid showinlargescreen">
-        <div class="row img-wrapper">
-            <div class="col-md-6 padding-0 " style="position: absolute; z-index:-1;">             
-                <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">              
-            </div>
-              <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-SH"><!--/*style="position: absolute; top:330px; left: 410px;"*/-->                            
-			     <a href="#supramentalHealing">
-			          <button type="button" class="knowmore_btn">                        
-			          </button>
-			     </a>
-		    </div>              
-            <div class="col-md-6 col-md-push-6">
-                <img src="images/top-evet-cont-line.png" class="img-responsive" style="height: 450px;" alt="Image">
-            </div> 
-            <div class="col-md-6 padding-0 img-wrapper" style="z-index:-1;">
-               <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">               	
-            </div>
-       		<div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-VS"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
-			     <a href="#vishnuSahasranama">
-			          <button type="button" class="knowmore_btn">                        
-			          </button>
-			     </a>
-			  </div> 	
-      </div>
-    </div>  
-      <div class="container-fluid showinsmallscreen">
-        <div class="row">
-            <div class="col-md-12 padding-0 img-wrapper">             
-                <img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
-                <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-SH-M"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
-		    <a href="#supramentalHealingM">
-		       <button type="button" class="knowmore_btn">                        
-		         </button>
-		     </a>
-		</div> 		 
-            </div> 
-	   <div class="col-md-12 padding-0 img-wrapper">
-               <img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
-               <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-VS-M"><!-- style="position: absolute; top:325px; left: 80px;"> -->                           
-		    <a href="#vishnuSahasranamaM">
-		        <button type="button" class="knowmore_btn"></button>
-		    </a>
-		</div> 		
-       	    </div>
-       </div>
-    </div> 
-    <section class="about-ie">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center">
-                        Sanmarga Maha Shivir
-                    </h1>
-                    <br>
-                    <p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Sample  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                    <br>
-                  
-                </div>
-            </div>
-        </div>       
-    </section>
-     <div id="supramentalHealing" class="container-fluid showinlargescreen">
-        <div class="row main">
-            <div class="col-md-12 padding-0">
-                <img src="images/sosh.png" class="img-responsive" style="width:100%;" alt="Image">
-            </div>              
-        </div>
-    </div> 
-    <div id="supramentalHealingM" class="container-fluid showinsmallscreen">
-        <div class="row main">
-            <div class="col-md-12 padding-0">
-                <img src="images/secrets-of-supramental-healing-banner.jpg" class="img-responsive" style="width:100%;" alt="Image">
-            </div> 
-	</div>
-        <div class="col-md-12 padding-0">
-              <img src="images/SosPreReq.png" class="img-responsive" style="width:100%;" alt="Image">
-	</div>             
-       
-    </div> 
-    <section class="about-ie">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>
-                        Importance of this program
-                    </h1>
-                    <br>
-                    <p style="line-height: 1.6;">
-                     Supramental - It literally means “above the mind”. It is neither conscious nor subconscious minds. It goes beyond, deep and above these two realms and it is here that you find something called “Existential intelligence”. The underlying secret force that runs the entire universe. Call it what you may – the higher force, the loving hand that guides, this existential intelligence dictates the design and pattern of our beautiful world, our lives and everything in it. The only way to access this treasure trove of Existential intelligence is through Supramental awakening.Supramental Awakening aligns both the conscious and subconscious, tunes it in line with the Existential Intelligence and allows it to take charge of your life. Unlike conscious and subconscious, life at this level runs on choiceless awareness. It is always progressive and it always knows the best path for you at any given point of time. There is no conflict, no chaos, no confusion. It always knows survival. It is the only thing that truly helps you grow and evolve to your highest self. Now that we know such treasure exists, the next question is how to manifest this supramentalization in our lives?
-Siddha sanmarga doesn’t believe in one size fits all. Every supramental sadhak has his/her own path, their own sphere of working. The Sadhak’s mind needs to be on its toes, has to be challenged in a new way regularly. Hence, the Siddha sanmarga “tablet” changes its style, form and is customized to the sadhak.One of the benefits of supramental manifestation is that you can re-wire and re-script your DNA/inner core for holistic abundance and to achieve your true purpose. It is like a detox and a cleanse where you flush out the waste and toxins from your life.
-   
-                     </p>
-                    <br>                    
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <!--<h1>What We Do</h1><br>-->
-            <div class="row">
-            	<div class="col-md-6 col-md-offset-3">
-            	<div class="embed-responsive embed-responsive-16by9">
-                     <iframe src="https://www.youtube.com/embed/9AC7sLhLjb4"></iframe>
-                </div>
-               </div>
-            </div>
-            <br>
-            <br>
-        </div>
-        <section class="about-ie">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <h1>
-                        Benifits of the program
-                    </h1>
-                    <br>
-		    	</div>
-		    
-		    <div class="row">	
-		    	<div class="container">
-		    	<div class="col-md-1"></div><div class="col-md-10">
-		    		<p>
-		    	    <strong>Faster</strong> – As the mind is out of the picture, any mixed signals, self-destructive elements are kept at bay. The path to existential healing is clear and it flows unhindered healing us totally.
-				</p>
-				</div>
-				<div class="col-md-1"></div><div class="col-md-10">
-					<p>
-	    			<strong>More effective</strong> – the existential healing is like an expert surgeon. It knows what it is doing and it does it with finesse and precision. Hence the end result will be a healthy life
-				</p>
-				</div>
-				<div class="col-md-1"></div><div class="col-md-10">
-				<p>
-	    			<strong>Powerful</strong> – As it goes beyond and above the mind, it has no more obstacles. The divine chooses and it works on a large scale effortlessly.
-			    	<!--<div class="col-md-12" style="height:400px;">  </div>  --> 
-			    </p>    	
-		   	</div>   	
-		   </div>
-		   </div>
-		   </div>
-		   </div>
-		   <br>
- 	</div>
- <div class="container">
- 	<h2>Itineray</h2>
- 	<div class="row">
-	 	<div class="col-md-6">
-	 		<div class="container">
-		 	<h2>Healing Initialtion</h2>
-		 	<div class="row">
-		 		<div class="col-md-6">
-		 		<img src="images/initiation.jpg" class="img-responsive" style="width:100%; height:auto;" alt="Image">
-                    	
-		 		</div>
-		 	</div>
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		<p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Sample  Lorem Ipsum is simply dummy text of the printing and typesetting industry.   </p>
-			 	</div>
-		 	</div>		 	
-		 </div>
-		 <div class="container">
-		 	<h2>Simhachalam Darsan</h2>
-		 	<div class="row">
-		 		<div class="col-md-6">
-		 		<img src="images/simhachalam.jpg" class="img-responsive" style="width:100%; height:auto;" alt="Image">
-                    	
-		 		</div>
-		 	</div>
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		<p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
-			 	</div>
-		 	</div>		 	
-		 </div>
-	 	</div>
-	 	<div class="col-md-6">
-	 	<div class="container">
-		 	<h2>Practice Session</h2>
-		 	<div class="row">
-		 		<div class="col-md-6">
-		 		<img src="images/practice-session.jpg" class="img-responsive" style="width:100%; height:auto;" alt="Image">
-                    	
-		 		</div>
-		 	</div>
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		<p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
-			 	</div>
-		 	</div>		 	
-		 </div>
-		 <div class="container">
-		 	<!--<h2>Simhachalam</h2>		 
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		Div
-			 	</div>
-		 	</div>-->		 	
-		 </div>	
-	 	</div>
- 	</div>
- 	<div class="container">
- 		<div class="row">
-			<div class="col-md-3 padding-0"> <h1>Click here for FAQ</h1></div>
-			<div class="col-md-9 padding-0"><h3><a href="#FAQcont">(Link to faq in the bottom of the page)</a></h3></div>
-		</div>
-		<br>
-		<br>
-	</div>
- </div>
-    </section>    
-    <div id="vishnuSahasranama" class="container-fluid showinlargescreen">
-        <div class="row main">
-            <div class="col-md-12">
-                <img src="images/vsnr.png" class="img-responsive" style="width:100%;" alt="Image">
-            </div>
-        </div>
-    </div>
-    <div id="vishnuSahasranamaM" class="container-fluid showinsmallscreen">
-        <div class="row main">
-            <div class="col-md-12 padding-0">
-                <img src="images/vishnu-sahasranama-banner.jpg" class="img-responsive" style="width:100%;" alt="Image">
-            </div>
-            
-        </div>
-        <div class="col-md-12 padding-0">
-            <img src="images/VishnuPrereq.png" class="img-responsive" style="width:100%;" alt="Image">
-        </div>  
-    </div>
-    <section class="about-ie">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>
-                        Importance of this program
-                    </h1>
-                    <br>
-                    <p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Sample  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-        	<div class="row">
-            	<div class="col-md-6 col-md-offset-3">
-            	<div class="embed-responsive embed-responsive-16by9">
-                     <iframe src="https://www.youtube.com/embed/m0Z2t936obo"></iframe>
-                </div>
-               </div>
-            </div>           
-            <br>
-            <br>
-        </div>
-         
- <div class="container-fluid" style="background-color:black;">
-    <div class="row">
-    	<div class="col-md-12" style="height:300px;">  </div>       	
-   </div>
- </div>
- <div class="container">
- 	<h2>Itineray</h2>
- 	<div class="row">
-	 	<div class="col-md-6">
-	 		<div class="container">
-		 	<h2>Day 1</h2>
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		<p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Sample  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-			 	</div>
-		 	</div>		 	
-		 </div>
-		 <div class="container">
-		 	<h2>Day 2</h2>
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		<p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Sample  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-			 	</div>
-		 	</div>		 	
-		 </div>
-	 	</div>
-	 	<div class="col-md-6">
-	 	<div class="container">
-		 	<h2>Day 3</h2>
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		<p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Sample  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-			 	</div>
-		 	</div>		 	
-		 </div>
-		 <div class="container">
-		 	<h2>Day 4</h2>		 	
-		 	<div class="row">
-			 	<div class="col-md-6">
-			 		<p style="line-height: 1.6;">
-                        Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Sample  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-			 	</div>
-		 	</div>		 	
-		 </div>	
-	 	</div>
- 	</div>
- 	<br>
- 	<br> 	
- </div>
-</section>  
- 
- <div id="register" class="container-fluid" style="background-color:#D3D3D3;">
-    <div class="row">
-    	<div class="col-md-1">
-        </div>
-    	<div class="col-md-10">
-         	<h2>Register</h2>
-        </div>
-        <div class="col-md-1">
-        </div>
-    </div>
- </div>
- <div class="container">
- 	<br>
- 	<div class="row">
-    	<div class="col-md-12">
-	 	<form method="post" name="myemailform" action="RegistrationForm.php">
-	 		<p>
-	 			<select aria-required="true" aria-invalid="false"><option value="">Select Event</option><option value="SSHandVSNR">Secrets Of Supramental Healing </option><option value="VSNR">Vishnu Sahasra Nama Nighooda Rahasya</option></select>
-	 		</p>
-	 		<div id="personInfo" class="container">
-	 			<div class="row">
-	 				<p>
-						<input placeholder="Name" type="text" name="name[]" required>
-					</p>
-					<p>
-						<input placeholder="Location" type="text" name="location[]" required>
-					</p>
-					<p>
-						<input placeholder="Email" type="text" name="email[]" required>
-					</p>
-					<p>
-						<input placeholder="Phone Number" type="text" name="phonenumber[]" required>
-					</p>
-					</div>					
-	 			</div>
-	 		</div>
-			<p>
-				<select id="noOfParticipents" name="NumberofParticipants" aria-required="true" aria-invalid="false"><option value="">Select Number of Participants</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
-			</p>
-			<p>
-				<select id="paymentMode" name="PaymentMode" aria-required="true" aria-invalid="false"><option value="">Select Mode of Payment</option><option value="Cash/Card">Cash/Card</option><option value="Account Transfer">Account Transfer <span style="color:red;">(Preferbale mode)</span></option><option value="online payment">online payment</option></select>
-			</p>		
-			<!--<p>
-				<label for='message'>Enter Message:</label> <br>
-				<textarea name="message"></textarea>
-			</p>-->
-			<input type="submit" name='submit' value="submit">
-		</form>
-		<p>
-			<br>
-		 		<a href="http://Payment.masteratmananda.com"><Button id="onlinepayment" style="width:150; height:50;">Online Payment</Button></a>
-			<br>
-			<script type="text/javascript"> $("#onlinepayment").hide();</script>
-		</p>
-	  </div>  
-    </div>
-    <br>
-    <br>
- </div>
 
-  <script>
-	/*
-	 * <script language="JavaScript">
-	// Code for validating the form
-	// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-	// for details
-	var frmvalidator  = new Validator("myemailform");
-	frmvalidator.addValidation("name","req","Please provide your name"); 
-	frmvalidator.addValidation("email","req","Please provide your email"); 
-	frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-	 */
-  </script>
- <div id="FAQcont" class="container-fluid" style="background-color:#D3D3D3;">
-    <div class="row">
-    	<div class="col-md-1">
-        </div>
-    	<div class="col-md-10">
-         	<h2>FAQ</h2>
-        </div>
-        <div class="col-md-1">
-        </div>
-    </div>
- </div> 
- <section>  
-	<div class="container"> 
-		<br>
-		<div class="bs-example">
-	    <div class="panel-group" id="accordion">
-	        <div class="panel panel-default">
-	            <div class="panel-heading">
-	                <h4 class="panel-title">
-	                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-plus"></span> What is HTML?</a>
-	                </h4>
-	            </div>
-	            <div id="collapseOne" class="panel-collapse collapse">
-	                <div class="panel-body">
-	                    <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="panel panel-default">
-	            <div class="panel-heading">
-	                <h4 class="panel-title">
-	                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-plus"></span> What is Bootstrap?</a>
-	                </h4>
-	            </div>
-	            <div id="collapseTwo" class="panel-collapse collapse">
-	                <div class="panel-body">
-	                    <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="panel panel-default">
-	            <div class="panel-heading">
-	                <h4 class="panel-title">
-	                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-plus"></span> What is CSS?</a>
-	                </h4>
-	            </div>
-	            <div id="collapseThree" class="panel-collapse collapse">
-	                <div class="panel-body">
-	                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
-	                </div>
-	            </div>
-	        </div>
-	    </div>		
-	</div>
-	</div>
-</section>
-<section>
-<div class="container-fluid" style="background-color:#D3D3D3;">
-	<div class="container">
-	<h1>Venue</h1>
-    <div class="row">
-    	<!--<div class="col-md-12" style="height:300px;">  </div>-->
-    	<div class="col-md-4 col-md-offset-1">
-    		<h3>Vuda Children's Arena</h3>
-    		<h3>Siripuram,Visakhapatnam</h3>
-    		<h3>Andhra Pradesh 530022</h3>
-    		<br>
-    	 <div class="row">
-			<div class="col-md-12">
-    		<h3>Distance</h2>
-    		<h3>Vizag railwaystation - 4.1 kms</h3>
-    		<h3>Vizag international airport - 13.5 kms</h3>
-         </div>
-		</div>	
-        </div> 
-    	<div class="col-md-6" style="height:300px;"><div id="map" class="col-md-6" style="height:200px;background:yellow"></div></div>
-	</div> 
-	<br>
-	<br>
-	</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!--<ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+-->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/top-banner.jpg" style="width:100%;" alt="Image">
+        <!--<div class="carousel-caption">
+          <h3>Sell $</h3>
+          <p>Money Money.</p>-->
+        </div>      
+      </div>
+      
+      <!--<div class="item">
+        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+        <div class="carousel-caption">
+          <h3>More Sell $</h3>
+          <p>Lorem ipsum...</p>
+        </div>      
+      </div>
+    </div>-->
+
+    <!-- Left and right controls 
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>-->
 </div>
-	<script>
-	function myMap() {
-	var mapOptions = {
-	    center: new google.maps.LatLng(51.5, -0.12),
-	    zoom: 10,
-	    mapTypeId: google.maps.MapTypeId.HYBRID
-	}
-	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-	}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
- </div>
-</section>
-<footer class="container-fluid text-center footerlatest">	
-	<div class="container-fluid" style="background-color:grey;">
-    <div class="row">
-    	<div class="col-md-4" style="height:100px;">   
-        </div>
-        <div class="col-md-4" style="height:100px;">    
-    		 <button type="button" class="faceBookBut">                        
-		          </button> 
-		     <button type="button" class="youTubeBut">                        
-		          </button>         	
-        </div>
-        <div class="col-md-4" style="height:100px;">  
-        </div>
+  <!--<section class="about-ie">-->
+  	   <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 padding-0">
+            	<img src="images/vishnu-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
+            </div>
+            <div class="col-md-6 padding-0">
+            	<img src="images/Healing-program-cont.jpg" class="img-responsive" style="width:100%;" alt="Image">
+            </div>
+      </div>  
     </div>
- </div> 
- <br>
-  <p>© 2017 Sri Siddha Sanmarga, All Rights Reserved. Powered by Siddha Sanmarga</p>
+  <!--</section>-->
+            
+<div class="container">    
+  <h1>What We Do</h1><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%; height:auto;" alt="Image">
+      <p>Current Project</p>
+    </div>
+    <div class="col-lg-12"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Project 2</p>    
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
 </footer>
 </body>
 </html>
