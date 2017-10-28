@@ -135,19 +135,19 @@
  @media (min-width:600px) and (orientation:portrait){
     .showinsmallscreen {
       display: none; 
+    } 
+    .showinsmallscreenL{
+     display: none; 
     }
-    .showinsmallscreenMob{
-	display: none;
-     }
   } 
   
   @media (min-width: 992px) and (orientation:landscape) {
     .showinsmallscreen {
       display: none; 
     }
-   .showinsmallscreenL{
-     display: none; 
-   }
+   .showinsmallscreenMob{
+	display: none;
+     }  
  }
 	  
 .img-wrapper {
@@ -349,7 +349,20 @@
     </div>
   </div>
 </nav>
-<div id="myCarousel" class="carousel slide showinlargescreen showinsmallscreenL" data-ride="carousel">      
+<div id="myCarousel" class="carousel slide showinlargescreen" data-ride="carousel">      
+    <div class="carousel-inner" >
+      <div class="item active img-wrapper">
+        <img src="images/top-banner.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
+        <div class="col-md-12 img-overlay-Register"><!-- style="position: absolute; top:400px; left: 300px;">-->                            
+		     <a href="http://siddhasanmarga.org/events/"><!--http://siddhasanmarga.org/events/"><!---->
+		          <button type="button" class="register_btn">                        
+		          </button>
+		     </a>
+		</div>      
+     </div>  
+   </div>  
+</div>
+<div id="myCarousel" class="carousel slide showinsmallscreenL" data-ride="carousel">      
     <div class="carousel-inner" >
       <div class="item active img-wrapper">
         <img src="images/top-banner.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
