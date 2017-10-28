@@ -850,7 +850,7 @@
 	<br>
 	</div>
 </div>
-	<script>
+<!---	<script>
 	function myMap() {
 	var mapOptions = {
 	    center: new google.maps.LatLng(51.5, -0.12),
@@ -861,8 +861,26 @@
 	}
 </script>
 <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
-<script src="https://maps.googleapis.com/maps/api/js?key=766622183330-vlmhl7vnvsp6ndj9r3khd1atngbmdgbh.apps.googleusercontent.com=myMap"></script>
-
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=766622183330-vlmhl7vnvsp6ndj9r3khd1atngbmdgbh.apps.googleusercontent.com=myMap"></script>
+-->
+  <script>
+      function initMap() {
+        var VudaChildrenTheatre = {lat: 17.720569, lng: 83.3195440};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: VudaChildrenTheatre
+        });
+        var marker = new google.maps.Marker({
+          position: VudaChildrenTheatre,
+          map: map
+        });
+      }/*
+        * 17.720569
+        * 83.3195440*/
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=766622183330-vlmhl7vnvsp6ndj9r3khd1atngbmdgbh.apps.googleusercontent.com&callback=initMap">
+ </script>
 	
  </div>
 </section>
