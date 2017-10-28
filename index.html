@@ -301,7 +301,7 @@
 	    });	
     });
    $(function(){ 
-     var navMain = $(".navbar-collapse .smallscreen"); // avoid dependency on #id
+     var navMain = $(".navbar-collapse"); // avoid dependency on #id
      // "a:not([data-toggle])" - to avoid issues caused
      // when you have dropdown inside navbar
      navMain.on("click", "a:not([data-toggle])", null, function () {
@@ -351,7 +351,7 @@
       </button>
       <a class="navbar-brand" href="#"><span><img src="images/Siddha-Sanmarga-Logopng .png" width="30px;" height="30px;"></img></span><span>Sri Siddha Sanmarga</span></a>
     </div>
-    <div class="collapse navbar-collapse navbar-right smallscreen" id="myNavbar">
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
       <ul class="nav navbar-nav showinlargescreen">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#supramentalHealing">Secrets Of Supramental Healing</a></li>
