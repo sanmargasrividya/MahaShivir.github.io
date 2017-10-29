@@ -130,34 +130,28 @@
     .showinlargescreen {
       display: none; 
     }	
-    .showinlargescreenTop{
+    /*.showinlargescreenTop {
       display: none; 
-    }	
+    }*/	
   }
   
  @media (min-width:600px) and (orientation:portrait){
     .showinsmallscreen {
       display: none; 
-    } 
-     .showinsmallscreenTop {
-      display: none; 
     }   
   } 
   
-  @media (min-width: 992px) and (orientation:landscape) {
+  /*@media (min-width: 992px) and (orientation:landscape) {
     .showinsmallscreen {
       display: none; 
     }
-    .showinlargescreenTop{
-      display: none; 
-    }
-   /*.img-overlay-Register-MLandScape {
+   .img-overlay-Register-MLandScape {
 	 
 	  left:75% !important;
 	  right: 0;
 	  text-align: center;
-   }*/
- }
+    }
+ }*/
 	  
 .img-wrapper {
   position: relative;
@@ -358,7 +352,7 @@
     </div>
   </div>
 </nav>
-<div id="myCarousel" class="carousel slide showinlargescreenTop" data-ride="carousel">      
+<div id="myCarousel" class="carousel slide showinlargescreen" data-ride="carousel">      
     <div class="carousel-inner" >
       <div class="item active img-wrapper">
         <img src="images/top-banner.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
@@ -368,10 +362,10 @@
 		          </button>
 		     </a>
 		</div>      
-	    </div>  
+     </div>  
    </div>  
 </div>
-<div id="myCarousel" class="carousel slide showinsmallscreenTop" data-ride="carousel">      
+<div id="myCarousel" class="carousel slide showinsmallscreen" data-ride="carousel">      
     <div class="carousel-inner" >
       <div class="item active img-wrapper">
         <img src="images/mobile image.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
