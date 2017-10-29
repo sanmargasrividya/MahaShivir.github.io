@@ -116,7 +116,7 @@
   /*background-size: 40px auto; /* to specify dimensions explicitly */
 }
 .register_btn {
-  background: url(images/reg-button-top-banner.png) 0 0 transparent no-repeat;
+  background: url(images/reg-button-top-banner.png) 0 0 transparent;
   /*border: medium none !important;*/
   width: 150px;
   height: 40px;
@@ -126,39 +126,30 @@
   /*background-size: 40px auto; /* to specify dimensions explicitly */
 }
   /* Hide the carousel text when the screen is less than 600 pixels wide */
- @media (max-width:700px) {
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  @media (max-width:600px) {
     .showinlargescreen {
       display: none; 
-    }	
-    /*.showinlargescreenTop{
-      display: none; 
-    }*/	
+    }
   }
   
  @media (min-width:600px) and (orientation:portrait){
     .showinsmallscreen {
       display: none; 
-    } 
-     /*.showinsmallscreenTop {
-      display: none; 
-    }  */ 
+    }
   } 
   
   @media (min-width: 992px) and (orientation:landscape) {
-    /*.showinsmallscreen {
+    .showinsmallscreen {
       display: none; 
-    }*/
-    /*.showinlargescreenTop{
-      display: none; 
-    }*/
-   /*.img-overlay-Register-MLandScape {
-	 
-	  left:75% !important;
-	  right: 0;
-	  text-align: center;
-   }*/
- }
-	  
+    }
+  }
+
+
 .img-wrapper {
   position: relative;
 }
@@ -229,7 +220,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left:20%;
+  left:22%;
   right:0;
   /*text-align: center;*/
 }
@@ -244,7 +235,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left:25%;
+  left:22%;
   right: 0;
   /*text-align: center;*/
 }
@@ -358,7 +349,7 @@
     </div>
   </div>
 </nav>
-<div id="myCarousel" class="carousel slide showinlargescreenTop" data-ride="carousel">      
+<div id="myCarousel" class="carousel slide showinlargescreen" data-ride="carousel">      
     <div class="carousel-inner" >
       <div class="item active img-wrapper">
         <img src="images/top-banner.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
@@ -371,11 +362,11 @@
      </div>  
    </div>  
 </div>
-<div id="myCarousel" class="carousel slide showinsmallscreenTop" data-ride="carousel">      
+<div id="myCarousel" class="carousel slide showinsmallscreen" data-ride="carousel">      
     <div class="carousel-inner" >
       <div class="item active img-wrapper">
         <img src="images/mobile image.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
-        <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-Register-M img-overlay-Register-MLandScape"><!--style="position: absolute; top:200px; left: 300px;">-->                            
+        <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-Register-M"><!--style="position: absolute; top:200px; left: 300px;">-->                            
 		     <a href="http://siddhasanmarga.org/events/"><!--http://siddhasanmarga.org/events/"><!--#register">-->
 		          <button type="button" class="register_btn">                        
 		          </button>
