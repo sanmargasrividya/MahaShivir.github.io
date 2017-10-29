@@ -141,10 +141,16 @@
     .showinsmallscreen {
       display: none; 
     }
+    .showRegButportrait {
+      display: none; 
+    }
   } 
   
   @media (min-width: 992px) and (orientation:landscape) {
     .showinsmallscreen {
+      display: none; 
+    }
+    .showRegButlandscape {
       display: none; 
     }
   }
@@ -240,6 +246,14 @@
   /*text-align: center;*/
 }
 
+.img-overlay-Register-ML {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:45%;
+  right: 0;
+  /*text-align: center;*/
+}
 .img-overlay-Register-M:before {
   content: ' ';
   display: block;
@@ -366,12 +380,18 @@
     <div class="carousel-inner" >
       <div class="item active img-wrapper">
         <img src="images/mobile image.jpg" class="img-responsive" style="width:100%; z-index:-1;" alt="Image">
-        <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-Register-M"><!--style="position: absolute; top:200px; left: 300px;">-->                            
+        <div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-Register-M showRegButportrait"><!--style="position: absolute; top:200px; left: 300px;">-->                            
 		     <a href="http://siddhasanmarga.org/events/"><!--http://siddhasanmarga.org/events/"><!--#register">-->
 		          <button type="button" class="register_btn">                        
 		          </button>
 		     </a>
-		</div>      
+		</div> 
+		<div class="col-xs-5 col-sm-5 col-lg-5 img-overlay-Register-ML showRegButlandscape"><!--style="position: absolute; top:200px; left: 300px;">-->                            
+		     <a href="http://siddhasanmarga.org/events/"><!--http://siddhasanmarga.org/events/"><!--#register">-->
+		          <button type="button" class="register_btn">                        
+		          </button>
+		     </a>
+		</div>         
      </div>  
    </div>  
 </div>
